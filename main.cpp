@@ -1,50 +1,50 @@
 ﻿//задание 1
 
-#include <iostream>
-using namespace std;
+// #include <iostream>
+// using namespace std;
 
-int main() {
-	setlocale(LC_ALL, "Ru");
-	srand(time(0));
-	const int n = 10;
-	int qwe[n];
-	int i;
-	int a = 100;
-	int b = 9000;
+// int main() {
+// 	setlocale(LC_ALL, "Ru");
+// 	srand(time(0));
+// 	const int n = 10;
+// 	int qwe[n];
+// 	int i;
+// 	int a = 100;
+// 	int b = 9000;
 
-	for (i = 0; i < n; i++) {
-		qwe[i] = a + rand() % (b - a + 1);
-		cout << qwe[i] << " ";
-	}
+// 	for (i = 0; i < n; i++) {
+// 		qwe[i] = a + rand() % (b - a + 1);
+// 		cout << qwe[i] << " ";
+// 	}
 
-	double sum = 0;
-	for (i = 0; i < n; i++) {
-		sum += qwe[i];
-	}
-	cout << " " << endl;
-	cout << " " << endl;
-	double mu = sum / n;
+// 	double sum = 0;
+// 	for (i = 0; i < n; i++) {
+// 		sum += qwe[i];
+// 	}
+// 	cout << " " << endl;
+// 	cout << " " << endl;
+// 	double mu = sum / n;
 
-	double sum_sq = 0;
-	for (i = 0; i < n; i++) {
-		sum_sq += pow(qwe[i] - mu, 2);
-	}
+// 	double sum_sq = 0;
+// 	for (i = 0; i < n; i++) {
+// 		sum_sq += pow(qwe[i] - mu, 2);
+// 	}
 
-	double sigma = sqrt(sum_sq / (n - 1));
+// 	double sigma = sqrt(sum_sq / (n - 1));
 
-	for (i = 0; i < n; i++) {
-		double zi = (qwe[i] - mu) / sigma;
+// 	for (i = 0; i < n; i++) {
+// 		double zi = (qwe[i] - mu) / sigma;
 
-		double v = 1;
+// 		double v = 1;
 
-		if (abs(zi) > v) {
-			cout << "Чек " << qwe[i] << ": Z = " << zi << endl;
-			cout << "Выброс" << endl;
-			cout << " " << endl;
+// 		if (abs(zi) > v) {
+// 			cout << "Чек " << qwe[i] << ": Z = " << zi << endl;
+// 			cout << "Выброс" << endl;
+// 			cout << " " << endl;
 			
-		}
-	}
-}
+// 		}
+// 	}
+// }
 
 //задание 2
 
